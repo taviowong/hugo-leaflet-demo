@@ -1,0 +1,13 @@
+<title>Map demo</title>
+<h1>Map demo</h1>
+
+<div id="map"></div>
+
+{{ $mapCss := resources.Get "map.css" }}
+<link rel="stylesheet" href="{{ $mapCss.RelPermalink }}">
+{{- $leafletCss := resources.Get "leaflet/leaflet.css" }}
+<link rel="stylesheet" href="{{ $leafletCss.RelPermalink }}">
+{{- $leafletFullscreenCss := resources.Get "leaflet.fullscreen/Control.FullScreen.css" }}
+<link rel="stylesheet" href="{{ $leafletFullscreenCss.RelPermalink }}">
+{{ $mapJs := resources.Get "map.js" | js.Build }}
+<script src="{{ $mapJs.RelPermalink }}"></script>

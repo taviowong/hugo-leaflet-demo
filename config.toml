@@ -1,0 +1,22 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+[module]
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'node_modules/leaflet/dist'
+  target = 'assets/leaflet'
+[[module.mounts]]
+  source = 'node_modules/leaflet/dist'
+  target = 'static/leaflet'
+[[module.mounts]]
+  source = 'node_modules/leaflet.fullscreen'
+  target = 'assets/leaflet.fullscreen'
+[[module.mounts]]
+  source = 'node_modules/leaflet.fullscreen'
+  target = 'static/leaflet.fullscreen'
